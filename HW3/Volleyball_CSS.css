@@ -1,0 +1,180 @@
+body{
+    
+    background: url('file:///D:/Data Science/wood.png') repeat-x 0 0 scroll;
+    background-color:#0C0C0C;
+    height:100%;
+    width:100%;
+}
+#name{
+    background-color: navajowhite;
+}
+div{
+    align-self: center;
+    text-align: center;
+    background-position: center;
+    position: relative;
+}
+
+h1{
+    color: rgb(99, 92, 77);
+    text-align: center;
+    background-position: center;
+}
+.style{font-style: DFKai-sb;}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    }
+    li{
+        float: left;
+    }
+    li a, .volleyball{
+        display: inline-block;
+        color: whitesmoke;
+        text-align: center;
+        padding: 14px 17px;
+        text-decoration: none;
+    }
+    li a:hover, .dropdown:hover .violin{
+        background-color: #5082b1;
+    }
+    li.dropdown{
+        display: inline-block;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: ghostwhite;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px 0px black(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a{
+        color: black;
+        padding: 12px 17px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .dropdown-content a:hover{background-color: burlywood;}
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+       
+    
+
+        
+  .slider_container {
+  margin: 30px auto;
+  width: 275px;
+  height: 275px;
+  position: relative;
+  border: 2px solid;
+  border-color: #fff;
+  border-bottom-width: 0px;
+  background-color: #f5f5f5;
+  box-shadow: #666 0 0 5px;
+  }
+      
+.slider_container div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  }
+.slider_container div {
+  -webkit-animation: round 25s linear infinite;
+  animation: round 25s linear infinite;
+  }
+    
+  @-webkit-keyframes round {
+  4% {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  /* 0 - 1秒 淡入*/
+  }
+  20% {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  /* 1- 5秒靜止*/
+  }
+  24% {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  /* 5-6秒淡出*/
+  }
+  }
+  @keyframes round {
+  4% {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  /* 0 - 1秒 淡入*/
+  }
+  20% {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  /* 1- 5秒靜止*/
+  }
+  24% {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  /* 5-6秒淡出*/
+  }
+  }
+  .slider_container div:nth-child(5) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    }
+    
+    .slider_container div:nth-child(4) {
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+    }
+    
+    .slider_container div:nth-child(3) {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+    }
+    
+    .slider_container div:nth-child(2) {
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s;
+    }
+    
+    .slider_container div:nth-child(1) {
+    -webkit-animation-delay: 20s;
+    animation-delay: 20s;
+    }
+    .slider_container span {
+      color: #000;
+      background: #fff;
+      position: absolute;
+      left: 0%;
+      top: 220px;
+      width: 220px;
+      height: 50px;
+      font-size: 30px;
+      text-align: center;
+      line-height: 50px;
+      -webkit-transform:scaleY(0);
+      -ms-transform:scaleY(0);
+      transform:scaleY(0);
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      }
+      
+      .slider_container:hover span {
+      width: 100%;
+      -webkit-transform:scaleY(1);
+      -ms-transform:scaleY(1);
+      transform:scaleY(1);
+      }
+      .slider_container:hover div {
+        -webkit-animation-play-state: paused;
+        animation-play-state: paused;
+        }
